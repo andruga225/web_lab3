@@ -1,0 +1,53 @@
+.form-style{
+
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+    min-height: 50vh;
+    padding: 8px;
+}
+
+.form-header{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.form-text{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: blueviolet;
+}
+
+input {
+    border-radius: 8px;
+    width: 200px;
+    height: 24px;
+    border: 1px solid blueviolet;
+    outline: none;
+    margin: 5px;
+}
+
+.form-new-field{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
+}
+
+.btn-style{
+    height: 26px;
+    width: 120px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    outline: none;
+    margin: 5px;
+}
