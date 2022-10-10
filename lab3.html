@@ -6,38 +6,21 @@
     <link rel="stylesheet" href="lab3.css">
 </head>
 <body>
-    <div id="ru" >
-        <div class="form-style" id="form-ru">
-            <p class="form-header">Форма</p>
+    <div >
+        <div class="form-style">
+            <p id="header" class="form-header">Форма</p>
             <div class="form-new-field">
-                <button class="btn-style" onclick="switchToEn()">Switch to EN</button>
-                <button id="btnLoginRu" class="btn-style" onclick="authRu()">Войти</button>
-                <button style="display: none" id="btnLogOutRu" class="btn-style" onclick="logOutRu()">Выйти</button>
+                <button id="btn-change-local" class="btn-style" onclick="localize()">En Version</button>
+                <button id="btn-login" class="btn-style" onclick="auth()">Войти</button>
+                <button style="display: none" id="btn-logout" class="btn-style" onclick="logOut()">Выйти</button>
             </div>
-            <p class="form-text" id="hello-ru">Привет, пользователь!</p>
-            <input type="text" placeholder="Первое поле:">
-            <input type="text" placeholder="Второе поле:">
+            <p class="form-text" id="hello">Привет, пользователь!</p>
+            <input id="first-field" type="text" placeholder="Первое поле:">
+            <input id="second-field" type="text" placeholder="Второе поле:">
         </div>
         <div class="form-new-field">
-            <input id="new-field-ru" type="text" placeholder="Плейсхолдер для нового поля">
-            <button class="btn-style" onclick="addRuFields()">Добавить поле</button>
-        </div>
-    </div>
-    <div id="en" style="display: none">
-        <div class="form-style" id="form-en">
-            <p class="form-header">Form</p>
-            <div class="form-new-field">
-                <button class="btn-style" onclick="switchToRu()">Switch to RU</button>
-                <button id="btnLoginEn" class="btn-style" onclick="authEn()">Login</button>
-                <button style="display: none" id="btnLogOutEn" class="btn-style" onclick="logOutEn()">LogOut</button>
-            </div>
-            <p id="hello-en" class="form-text">Hello, user!</p>
-            <input type="text" placeholder="First field:">
-            <input type="text" placeholder="Second field:">
-        </div>
-        <div class="form-new-field">
-            <input id="new-field-en" type="text" placeholder="Placeholder for a new field:">
-            <button class="btn-style" onclick="addEnFields()">Add field</button>
+            <input id="new-field" type="text" placeholder="Плейсхолдер для нового поля">
+            <button id="btn-new-field" class="btn-style" onclick="addFields()">Добавить поле</button>
         </div>
     </div>
     <script src="lab3.js"></script>
